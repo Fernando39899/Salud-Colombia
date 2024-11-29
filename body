@@ -1,0 +1,28 @@
+<header class="bg-primary text-white text-center py-4">
+  <h1>Bienvenido a la Plataforma de Salud</h1>
+  <p>Accede a información confiable y accesible sobre temas de salud.</p>
+</header>
+<section class="container my-5">
+  <h2 class="text-center mb-4">Noticias Destacadas</h2>
+  <div class="row">
+    <div class="col-md-4">
+      <div class="card">
+        <img src="noticia1.jpg" class="card-img-top" alt="Noticia 1">
+        <div class="card-body">
+          <h5 class="card-title">Título de la Noticia 1</h5>
+          <p class="card-text">Resumen breve de la noticia 1.</p>
+          <a href="#" class="btn btn-primary">Leer más</a>
+        </div>
+      </div>
+    </div>
+    <!-- Repite la estructura para las demás noticias -->
+  </div>
+</section>
+<section class="container my-5 text-center">
+  <h2>Accesos Rápidos</h2>
+  <div class="d-flex justify-content-around flex-wrap mt-4">
+    <a href="#" class="btn btn-outline-primary">Consulta de Síntomas</a>
+    <a href="#" class="btn btn-outline-primary">Noticias y Actualizaciones</a>
+    <a href="#" class="btn btn-outline-primary">Información General de Salud</a>
+  </div>
+</section>
