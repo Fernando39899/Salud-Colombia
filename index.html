@@ -1,40 +1,77 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Sitio Web</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            background-color: #f0f0f0;
-        }
-        header {
-            background-color: #007acc;
-            color: white;
-            padding: 20px;
-        }
-        main {
-            padding: 20px;
-        }
-        footer {
-            margin-top: 20px;
-            background-color: #333;
-            color: white;
-            padding: 10px;
-        }
-    </style>
+    <title>Plataforma de Información en Salud</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Bienvenido a Mi Sitio Web</h1>
+    <header class="header">
+        <div class="container">
+            <h1>Plataforma de Información en Salud</h1>
+            <nav>
+                <ul class="menu">
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#consulta">Consulta de Síntomas</a></li>
+                    <li><a href="#noticias">Noticias</a></li>
+                    <li><a href="#acerca">Acerca de</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
-    <main>
-        <p>Este es un ejemplo de sitio web publicado con GitHub Pages.</p>
-    </main>
-    <footer>
-        <p>Creado por [Tu Nombre]</p>
+
+    <section id="inicio" class="section">
+        <div class="container">
+            <h2>Bienvenido a la Plataforma de Salud</h2>
+            <p>Accede a información confiable, consulta síntomas y recibe recomendaciones personalizadas.</p>
+        </div>
+    </section>
+
+    <section id="consulta" class="section">
+        <div class="container">
+            <h2>Consulta de Síntomas</h2>
+            <form id="symptomForm">
+                <label for="symptoms">Describe tus síntomas:</label><br>
+                <textarea id="symptoms" placeholder="Ejemplo: dolor de cabeza, fiebre..."></textarea><br>
+                <button type="button" id="analyzeButton">Analizar</button>
+            </form>
+            <div id="result"></div>
+        </div>
+    </section>
+
+    <section id="noticias" class="section">
+        <div class="container">
+            <h2>Últimas Noticias</h2>
+            <div class="news">
+                <div class="news-item">
+                    <img src="images/news1.jpg" alt="Noticia 1">
+                    <h3>Título de Noticia 1</h3>
+                    <p>Resumen breve de la noticia.</p>
+                </div>
+                <div class="news-item">
+                    <img src="images/news2.jpg" alt="Noticia 2">
+                    <h3>Título de Noticia 2</h3>
+                    <p>Resumen breve de la noticia.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="acerca" class="section">
+        <div class="container">
+            <h2>Acerca de la Plataforma</h2>
+            <p>Este proyecto tiene como objetivo facilitar el acceso a información de salud confiable para todos.</p>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>© 2024 Plataforma de Información en Salud</p>
+        </div>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
